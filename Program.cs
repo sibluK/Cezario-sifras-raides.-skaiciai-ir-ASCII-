@@ -82,11 +82,12 @@ namespace Cezario_Sifras
                 Console.WriteLine("3. Šifravimas bet kokių simbolių (Cezario metodu)");
                 Console.WriteLine("4. Dešifravimas bet kokių simbolių (Cezario metodu)");
                 Console.WriteLine("5. Baigti");
-                int pasirinkimas = int.Parse(Console.ReadLine());
+                char pasirinkimas = char.Parse(Console.ReadLine());
+                //int pasirinkimas = int.Parse(Console.ReadLine());
 
                 switch (pasirinkimas)
                 {
-                    case 1: // Šifravimas Cezario metodu tik raides ir skaičius
+                    case '1': // Šifravimas Cezario metodu tik raides ir skaičius
 
                         Console.Write("Ivesktite tekstą, kurį norite užšifruoti: ");
                         string nesifruotasTekstas = Console.ReadLine();
@@ -104,7 +105,7 @@ namespace Cezario_Sifras
 
                         break;
 
-                    case 2: // Dešifravimas Cezario metodu tik raides ir skaicius
+                    case '2': // Dešifravimas Cezario metodu tik raides ir skaicius
 
                         Console.Write("Iveskite testą, kurį norite dešifruoti: ");
                         string sifruotasTekstas = Console.ReadLine();
@@ -122,7 +123,8 @@ namespace Cezario_Sifras
 
                         break;
 
-                    case 3:
+                    case '3': // Šifravimas bet kokių simbolių Cezario metodu
+
                         Console.Write("Ivesktite tekstą, kurį norite užšifruoti: ");
                         string nesifruotasTekstas2 = Console.ReadLine();
                         Console.Write("Iveskite poslinkį: ");
@@ -139,7 +141,8 @@ namespace Cezario_Sifras
 
                         break;
 
-                    case 4:
+                    case '4': // Dešifravimas bet kokių simbolių Cezario metodu
+
                         Console.Write("Iveskite testą, kurį norite dešifruoti: ");
                         string sifruotasTekstas2 = Console.ReadLine();
                         Console.Write("Iveskite poslinki: ");
@@ -156,7 +159,7 @@ namespace Cezario_Sifras
 
                         break;
 
-                    case 5:
+                    case '5':
                         run = false;
                         break;
 
