@@ -12,28 +12,9 @@ namespace Cezario_Sifras
                 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
                 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
                 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-                '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+                '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' '
             };
 
-        /*
-        static char[] abecele = {
-                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-                'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
-                'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-                'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-            };
-
-        static char[] abecele = {
-                'A', 'Ą', 'B', 'C', 'Č', 'D', 'E', 'Ę', 'Ė', 'F', 'G', 'H', 'I', 'Į', 'Y', 'J', 'K', 'L', 'M',
-                'N', 'O', 'P', 'R', 'S', 'Š', 'T', 'U', 'Ų', 'Ū', 'V', 'Z', 'Ž',
-            };
-
-        static char[] abecele = {
-                'A', 'Ą', 'B', 'C', 'Č', 'D', 'E', 'Ę', 'Ė', 'F', 'G', 'H', 'I', 'Į', 'Y', 'J', 'K', 'L', 'M',
-                'N', 'O', 'P', 'R', 'S', 'Š', 'T', 'U', 'Ų', 'Ū', 'V', 'Z', 'Ž',
-                '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
-            };
-        */
         public static char sifruotiRaide(char ch, int poslinkis, char[] abecele)
         {
             int abecelesIlgis = abecele.Length;
@@ -83,7 +64,6 @@ namespace Cezario_Sifras
                 Console.WriteLine("4. Dešifravimas bet kokių simbolių (Cezario metodu)");
                 Console.WriteLine("5. Baigti");
                 char pasirinkimas = char.Parse(Console.ReadLine());
-                //int pasirinkimas = int.Parse(Console.ReadLine());
 
                 switch (pasirinkimas)
                 {
